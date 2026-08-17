@@ -1,0 +1,187 @@
+{
+  "profile": {
+    "userName": "Arwen",
+    "ariaTone": "companion",
+    "operatingMode": "first_week",
+    "focusPrinciple": "Proteger energia, clareza e progresso real antes de otimizar tarefas pequenas.",
+    "quietHours": "22:30-07:30"
+  },
+  "brief": {
+    "greeting": "Bom dia. Eu ja fiz uma leitura do seu contexto inicial.",
+    "primaryRisk": "O maior risco hoje e comecar muitas frentes sem transformar nenhuma em execucao rastreavel.",
+    "prepared": [
+      "Criei uma primeira inbox de decisoes para voce aprovar ou corrigir meu criterio.",
+      "Separei memorias iniciais que vao orientar meu comportamento.",
+      "Modelei os primeiros dominios onde posso ganhar autonomia com seguranca."
+    ],
+    "recommendation": "Comece aprovando ou rejeitando duas decisoes. Isso treina meu padrao de acao mais rapido do que uma configuracao longa."
+  },
+  "memories": [
+    {
+      "id": "mem_001",
+      "type": "goal",
+      "content": "Quer construir o ARIA como um assistente de vida autonomo, ambicioso e diferente de um chatbot comum.",
+      "source": "initial_product_request",
+      "confidence": 0.98,
+      "sensitivity": "medium",
+      "createdAt": "2026-06-15T21:30:00.000Z",
+      "updatedAt": "2026-06-15T21:30:00.000Z",
+      "userEditable": true
+    },
+    {
+      "id": "mem_002",
+      "type": "preference",
+      "content": "Prefere uma abordagem de desenvolvimento liderada, senior, fullstack e orientada a execucao.",
+      "source": "development_request",
+      "confidence": 0.91,
+      "sensitivity": "low",
+      "createdAt": "2026-06-15T21:30:00.000Z",
+      "updatedAt": "2026-06-15T21:30:00.000Z",
+      "userEditable": true
+    },
+    {
+      "id": "mem_003",
+      "type": "pattern",
+      "content": "Valoriza produtos que antecipam necessidades em vez de esperar comandos diretos.",
+      "source": "initial_product_request",
+      "confidence": 0.88,
+      "sensitivity": "low",
+      "createdAt": "2026-06-15T21:30:00.000Z",
+      "updatedAt": "2026-06-15T21:30:00.000Z",
+      "userEditable": true
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal_001",
+      "title": "Construir o MVP funcional do ARIA",
+      "horizon": "month",
+      "progress": 12,
+      "nextAction": "Validar o cockpit, motor proativo e ciclo de decisao."
+    },
+    {
+      "id": "goal_002",
+      "title": "Criar uma experiencia que nao pareca chatbot",
+      "horizon": "quarter",
+      "progress": 8,
+      "nextAction": "Priorizar painel vivo, inbox de decisoes e autonomia por dominio."
+    }
+  ],
+  "signals": [
+    {
+      "id": "sig_001",
+      "source": "manual",
+      "title": "Repositorio ainda nao tem produto executavel",
+      "detail": "Existe blueprint, mas ainda falta uma experiencia local que demonstre ARIA agindo.",
+      "impact": 9,
+      "urgency": 8,
+      "detectedAt": "2026-06-15T21:31:00.000Z",
+      "linkedGoalId": "goal_001"
+    },
+    {
+      "id": "sig_002",
+      "source": "notes",
+      "title": "Risco de virar apenas documentacao",
+      "detail": "A visao e forte, mas precisa de loop observar-entender-priorizar-agir desde o primeiro MVP.",
+      "impact": 8,
+      "urgency": 7,
+      "detectedAt": "2026-06-15T21:32:00.000Z",
+      "linkedGoalId": "goal_002"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "dec_001",
+      "title": "Transformar o blueprint em cockpit vivo",
+      "context": "O produto precisa se diferenciar de um chatbot logo na primeira tela.",
+      "proposedAction": "Criar uma interface com briefing, sinais, decisoes, memoria e autonomia.",
+      "evidence": [
+        "Usuario pediu um assistente que age e antecipa.",
+        "Blueprint define que o chat nao deve ser a tela principal."
+      ],
+      "risk": "low",
+      "autonomyLevel": 2,
+      "status": "pending",
+      "createdAt": "2026-06-15T21:33:00.000Z"
+    },
+    {
+      "id": "dec_002",
+      "title": "Comecar com persistencia local",
+      "context": "Ainda nao ha autenticacao, conectores reais ou banco provisionado.",
+      "proposedAction": "Usar JSON local persistente para simular memoria e historico ate a camada de banco ser criada.",
+      "evidence": [
+        "Reduz friccao do MVP.",
+        "Permite validar o loop de produto antes de integrar APIs sensiveis."
+      ],
+      "risk": "low",
+      "autonomyLevel": 2,
+      "status": "pending",
+      "createdAt": "2026-06-15T21:34:00.000Z"
+    }
+  ],
+  "missions": [
+    {
+      "id": "mis_001",
+      "title": "Desenvolvimento: Criar o ARIA como produto faz-tudo",
+      "originalRequest": "Construir um assistente autonomo que tambem consiga receber qualquer missao e transformar em execucao.",
+      "domain": "development",
+      "status": "planned",
+      "risk": "low",
+      "requiredAutonomy": 2,
+      "steps": [
+        "Entender o resultado desejado e restricoes implicitas.",
+        "Buscar contexto nas memorias, objetivos, sinais e permissoes.",
+        "Separar o que posso preparar agora do que exige aprovacao.",
+        "Implementar uma camada de missoes universais.",
+        "Validar build e registrar a decisao no cockpit."
+      ],
+      "completedSteps": 0,
+      "nextAction": "Implementar a primeira fatia tecnica validavel.",
+      "blockers": [],
+      "createdAt": "2026-06-15T21:36:00.000Z",
+      "updatedAt": "2026-06-15T21:36:00.000Z"
+    }
+  ],
+  "autonomy": [
+    {
+      "id": "aut_001",
+      "domain": "Produto",
+      "actionPattern": "Criar artefatos de planejamento e arquitetura no repositorio",
+      "level": 3,
+      "guardrail": "Nao remover trabalho existente sem confirmacao explicita.",
+      "successCount": 2
+    },
+    {
+      "id": "aut_002",
+      "domain": "Execucao local",
+      "actionPattern": "Criar prototipos e rodar validacoes tecnicas",
+      "level": 3,
+      "guardrail": "Manter mudancas rastreaveis e validar build antes de finalizar.",
+      "successCount": 1
+    },
+    {
+      "id": "aut_003",
+      "domain": "Comunicacao externa",
+      "actionPattern": "Enviar mensagens, emails ou alterar sistemas externos",
+      "level": 0,
+      "guardrail": "Nunca agir sem conectores reais, consentimento e revisao explicita.",
+      "successCount": 0
+    },
+    {
+      "id": "aut_004",
+      "domain": "Missoes universais",
+      "actionPattern": "Receber qualquer pedido, classificar dominio, quebrar em passos e preparar execucao",
+      "level": 2,
+      "guardrail": "Acoes externas, financeiras, medicas ou sociais exigem aprovacao explicita.",
+      "successCount": 0
+    }
+  ],
+  "audit": [
+    {
+      "id": "log_001",
+      "event": "blueprint_created",
+      "detail": "Fundacao de produto e arquitetura criada em docs/ARIA_BLUEPRINT.md.",
+      "createdAt": "2026-06-15T21:35:00.000Z"
+    }
+  ]
+}

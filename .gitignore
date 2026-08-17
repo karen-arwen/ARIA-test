@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-server/
+logs/
+data/aria.local.json
+*.tsbuildinfo
+.DS_Store
+.env
